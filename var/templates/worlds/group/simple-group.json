@@ -53,7 +53,7 @@
                                 "elements": [
                                     {
                                         "id": "${refid}1",
-                                        "type": "mylibrary"
+                                        "type": "nyumylibrary"
                                     }
                                 ]
                             }
@@ -61,7 +61,7 @@
                     }
                 ],
                 "${refid}1": {
-                    "mylibrary": {
+                    "nyumylibrary": {
                         "groupid": "${groupid}"
                     }
                 }
@@ -93,7 +93,7 @@
                                 "elements": [
                                     {
                                         "id": "${refid}3",
-                                        "type": "participants",
+                                        "type": "nyuparticipants",
                                     }
                                 ]
                             }
@@ -101,7 +101,7 @@
                     }
                 ],
                 "${refid}3": {
-                    "participants": {
+                    "nyuparticipants": {
                         "groupid": "${groupid}"
                     }
                 }

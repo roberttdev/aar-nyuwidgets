@@ -1,0 +1,21 @@
+{
+    "enabled":            true,
+    "groupdashboard":     false,
+    "grouppages":         true,
+    "hasSettings":        false,
+    "i18n": {
+        "default": {
+            "bundle":     "/devwidgets/nyumylibrary/bundles/default.properties",
+            "name":       "My library - With Tags",
+            "description":"View and manage a user's library items with tag filters"
+        }
+    },
+    "id":                 "nyumylibrary",
+    "personalportal":     false,
+    "showinsakaigoodies": true,
+    "type":               "sakai",
+    "url":                "/devwidgets/nyumylibrary/mylibrary.html",
+    "userdashboard":      false,
+    "userpages":          false,
+    "hashParams":         ["l", "lq"]
+}

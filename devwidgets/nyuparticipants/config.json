@@ -1,0 +1,29 @@
+{
+    "enabled":            false,
+    "groupdashboard":     false,
+    "grouppages":         true,
+    "hasSettings":        false,
+    "i18n": {
+        "default": {
+            "bundle": "/devwidgets/nyuparticipants/bundles/default.properties",
+            "name": "Participants - NYU Version",
+            "description": "List Participants of a Group - NYU Version",
+        }
+    },
+    "id":                 "nyuparticipants",
+    "personalportal":     false,
+    "showinsakaigoodies": true,
+    "type":               "sakai",
+    "url":                "/devwidgets/nyuparticipants/participants.html",
+    "userdashboard":      false,
+    "userpages":          false,
+    "defaultConfiguration": {
+        "extraFields": [
+            {"title": "PROFILE_BASIC_ROLE_LABEL", "key": "role", "searchable": false},
+            {"title": "PROFILE_BASIC_SCHOOL_COLLEGE_LABEL", "key": "college", "searchable": false},
+            {"title": "PROFILE_BASIC_DEPARTMENT_LABEL", "key": "department", "searchable": false},
+            {"title": "PROFILE_ABOUTME_ACADEMICINTERESTS_LABEL", "key": "academicinterests", "searchable": false},
+            {"title": "TAGS", "key": "sakai:tags", "searchable": false}
+        ]
+    }
+}

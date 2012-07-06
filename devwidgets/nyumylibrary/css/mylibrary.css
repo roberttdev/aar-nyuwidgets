@@ -1,0 +1,255 @@
+/**
+ * Licensed to the Sakai Foundation (SF) under one
+ * or more contributor license agreements. See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership. The SF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ */
+.mylibrary_main{margin:0 10px 10px 15px;overflow:hidden; }
+
+.mylibrary_title {font-size:1.1em;}
+.mylibrary_information {margin-top:15px;}
+.mylibrary_information_detail {width:70%;}
+.mylibrary_information_fliter {float:right;}
+#mylibrary_items {margin: 10px 0 0; border-top: 1px solid #DDDDDD;}
+.mylibrary_title_bar {padding:5px 0 10px;min-height:21px;}
+.mylibrary_check, #mylibrary_check_all {margin-top:4px;}
+#mylibrary_select {height:19px;margin:6px 8px 0 1px;padding:2px 0 0;width:22px;}
+.mylibrary_widget{overflow:hidden;}
+.mylibrary_details {font-size:0.9em;}
+.mylibrary_edit {background:url("/dev/images/imanage.png") no-repeat scroll 0 0 transparent;height:14px;width:54px;display:inline-block;vertical-align:text-top;}
+.mylibrary_placeholder {width:20px; height:20px; float:left;margin-left: 5px;}
+.mylibrary_icon {background:url("/dev/images/dashboard_sprite.png") no-repeat scroll -68px -235px transparent; margin-top:10px;float:left;display:none;}
+.mylibrary_remove_icon {margin-top: 10px;}
+.mylibrary_description {float:right; border-left:1px solid #DDDDDD;width:30%; padding-left:5px;}
+.mylibrary_description_detail {color: #878A8C; font-size:0.9em; display:block; padding-top:2px; margin:0;}
+.mylibrary_detail_dark {color:#000000;}
+.mylibrary_noborder{border:none;}
+#mylibrary_actionbar .s3d-search-container {display:inline-block;float:right;margin-right:140px;}
+#mylibrary_actionbar .s3d-search-container #mylibrary_livefilter{width:200px;}
+#mylibrary_actionbar {margin-top: 10px; margin-bottom: 10px;}
+.mylibrary_center {text-align:center;}
+#mylibrary_sortby{border:1px solid #ccc;}
+.mylibrary_add_content_button {margin-top: 0px !important;}
+
+.mylibrary_item_left_filler{margin:1px 8px 0 0;display: inline;float: left;height: 25px;width: 17px;}
+.mylibrary_item_mimetype {font-size:smaller;white-space:pre;text-transform:uppercase;}
+.mylibrary_item_by {padding:3px 0;font-size:11px;}
+.mylibrary_item_description{margin:0px;font-size:.90em;padding:6px 0; word-wrap: break-word;}
+.mylibrary_item_share_icon{display:inline-block;float:right; margin-right: 10px;}
+.mylibrary_item_author_icon{margin-left:8px;display:inline-block;float:right;}
+.mylibrary_item_usedin{margin-top:2px;font-size:11px;}
+.mylibrary_item_icon{display: inline-block;height: 10px;width: 15px;}
+.mylibrary_item_usedin_icon{background: url("/devwidgets/entity/images/entity_used_by_icon.png") no-repeat scroll left top transparent;}
+.mylibrary_item_comments_icon{margin-left:8px;background: url("/devwidgets/entity/images/entity_comment_icon.png") no-repeat scroll left top transparent;}
+.mylibrary_item_tags_list {margin:0px 0 0 20px;font-size:11px; padding-bottom: 4px;}
+.mylibrary_item:hover {background-color: #f2f9fc;}
+#mylibrary_empty{width:100%;}
+/* Used in group filter */
+#mylibrary_groupfilter{
+    margin-top:10px;padding:8px;
+    background-color:#ebeef0;
+    border: 1px solid #EAEBEC;
+    border-top: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px; /* Firefox 3.6 and earlier */
+    -webkit-border-radius: 5px; /* Safari */
+}
+#mylibrary_groupfilter_selection:hover{cursor:pointer;}
+#mylibrary_groupfilter_selection{padding: 2px 6px 9px 6px;margin:-4px 0 0 5px;position:absolute;z-index:1000;}
+.mylibrary_groupfilter_selection_open{
+    padding-left:5px !important;
+    margin:-5px 0 0 5px !important;
+    border: 1px solid #000000;
+    border-bottom: 0;
+    background-color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px; /* Firefox 3.6 and earlier */
+    -moz-border-radius-topright: 5px; /* Firefox 3.6 and earlier */
+    -webkit-border-top-left-radius-topleft: 5px; /* Safari */
+    -webkit-border-top-left-radius-topright: 5px; /* Safari */
+}
+#mylibrary_groupfilter_groups{
+    border: 1px solid #000000;
+    background-color:#ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px; /* Firefox 3.6 and earlier */
+    -webkit-border-top-left-radius: 5px; /* Safari */
+    position:fixed;
+    width:415px;
+    z-index:100;
+}
+#mylibrary_groupfilter_wrapper{position:relative;}
+#mylibrary_groupfilter_groups_container{padding:5px;}
+#mylibrary_groupfilter_groups_container button{padding:1px;width:130px;}
+#mylibrary_groupfilter_groups_container button:hover{
+    padding:0px !important;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background:#ffffff url("/devwidgets/nyumylibrary/images/selected_bg.png") repeat-x;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    -moz-border-radius: 5px; /* Firefox 3.6 and earlier */
+    -webkit-border-top-left-radius: 5px; /* Safari */
+}
+.mylibrary_groupfilter_usedin_arrow_up{margin: 1px 0 0 2px;background: url("/devwidgets/nyumylibrary/images/up_arrow.png") no-repeat scroll left top transparent;display: inline;float: right;height: 17px;width: 17px;}
+.mylibrary_groupfilter_usedin_arrow_down{margin: 1px 0 0 2px;background: url("/devwidgets/nyumylibrary/images/down_arrow.png") no-repeat scroll left top transparent;display: inline;float: right;height: 17px;width: 17px;}
+
+.mylibrary_meta .s3d-no-results-container {font-style:normal;}
+
+#mylibrary_items.s3d-search-results-grid .mylibrary_item.s3d-search-result a img {position:inherit;}
+#mylibrary_items.s3d-search-results-grid .s3d-search-result-user-functions .mylibrary_item_left_filler {width:auto;}
+#mylibrary_items.s3d-search-results-grid .s3d-search-result-user-functions .mylibrary_item_left_filler input {float:left;margin-right:13px;margin-top:0;}
+#mylibrary_items.s3d-search-results-grid .s3d-search-result-user-functions .mylibrary_item_left_filler button {float:left;margin-top:1px;}
+#mylibrary_items.s3d-search-results-grid .mylibrary_item_mimetype{display:block;}
+#mylibrary_content_share.s3d-button .entity_share_content,
+#mylibrary_content_share.s3d-button:disabled:hover .entity_share_content {background:url("/dev/images/share_icon_default_16x11.png") no-repeat center center transparent;display:block;float:right;height:18px;margin-left:7px;width:16px;}
+#mylibrary_content_share.s3d-button:hover .entity_share_content {background:url("/dev/images/share_icon_hover_16x11.png") no-repeat center center transparent;}
+#mylibrary_items .s3d-search-result {padding:10px 10px 6px 5px !important;}
+
+/* Tag related styles */
+.mylibrary_widget .refine-by-tags-row {
+    margin-top: 10px;
+}
+.mylibrary_widget .s3d-search-results-cloudview {
+    background-image: url(/devwidgets/nyumylibrary/images/cloudview.off.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.mylibrary_widget .s3d-search-results-cloudview:hover,
+.mylibrary_widget .s3d-search-results-cloudview.selected {
+    background-image: url(/devwidgets/nyumylibrary/images/cloudview.on.png);
+}
+
+.mylibrary_widget .tagcloud-container {
+	display: none;
+}
+
+.mylibrary_widget .tagcloud-container .s3d-listview-options {
+    margin-top: 0;
+}
+.mylibrary_widget .tagcloud-container .s3d-search-results-listview {
+    background-image: url(/devwidgets/nyumylibrary/images/cloudlist.off.png);
+}
+.mylibrary_widget .tagcloud-container .s3d-search-results-listview:hover,
+.mylibrary_widget .tagcloud-container .s3d-search-results-listview.selected {
+    background-image: url(/devwidgets/nyumylibrary/images/cloudlist.on.png) !important;
+}
+.mylibrary_widget .tagcloud-row {
+    	width: 730px;
+        min-height: 180px;
+}
+.mylibrary_widget .tagcloud-row.jqcloud {
+	height: 180px;
+}
+.mylibrary_widget .tagcloud-row .search-tag.active a {
+	background-image: url(/dev/images/search_tag_remove.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 10px;
+        font-weight: bold;
+}
+
+.mylibrary_widget .tagcloud-row .no-tags {
+    color: #AAA;
+}
+.mylibrary_widget .not-all-tags-msg {
+    color: #999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.9em;
+}
+.mylibrary_widget.tagcloud-enabled .s3d-page-header-top-row,
+.mylibrary_widget.tagcloud-enabled .s3d-search-refineby-list {
+	margin-bottom: 10px;
+}
+.mylibrary_widget button.filter-by-tags-toggle {
+	float: right;
+	margin: 4px 20px 0 0;
+}
+.mylibrary_widget .tagcloud-list {
+    margin:0;
+    padding:0;   
+}
+.mylibrary_widget .tagcloud-list li {
+    display: inline;
+    margin-right: 6px;
+}
+.mylibrary_widget div.jqcloud {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #09f;
+  overflow: hidden;
+  position: relative;
+}
+.mylibrary_widget .tagcloud-list button {
+   margin-bottom: 2px;
+}
+.mylibrary_widget div.jqcloud a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+.mylibrary_widget div.jqcloud a:hover {
+  color: #0df;
+}
+.mylibrary_widget div.jqcloud a:hover {
+  color: #0cf;
+}
+.mylibrary_widget div.jqcloud span {
+  padding: 0;
+}
+.mylibrary_widget div.jqcloud span.w10 {
+  font-size: 28px;
+  color: #0cf;
+}
+.mylibrary_widget div.jqcloud span.w9 {
+  font-size: 26px;
+  color: #0cf;
+}
+.mylibrary_widget div.jqcloud span.w8 {
+  font-size: 24px;
+  color: #0cf;
+}
+.mylibrary_widget div.jqcloud span.w7 {
+  font-size: 22px;
+  color: #39d;
+}
+.mylibrary_widget div.jqcloud span.w6 {
+  font-size: 20px;
+  color: #90c5f0;
+}
+.mylibrary_widget div.jqcloud span.w5 {
+  font-size: 18px;
+  color: #90a0dd;
+}
+.mylibrary_widget div.jqcloud span.w4 {
+  font-size: 16px;
+  color: #90c5f0;
+}
+.mylibrary_widget div.jqcloud span.w3 {
+  font-size: 14px;
+  color: #a0ddff;
+}
+.mylibrary_widget div.jqcloud span.w2 {
+  font-size: 12px;
+  color: #99ccee;
+}
+.mylibrary_widget div.jqcloud span.w1 {
+  font-size: 10px;
+  color: #aab5f0;
+}
+.mylibrary_widget div.jqcloud { line-height: normal }
